@@ -1,16 +1,42 @@
-# React + Vite
+# Library Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Built with React + Vite
 
-Currently, two official plugins are available:
+## How to Run
+npm install
+npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Open browser at http://localhost:5173
 
-## React Compiler
+## Login Credentials
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Role  | Username | Password | Access |
+|-------|----------|----------|--------|
+| Admin | adm      | adm      | Maintenance + Reports + Transactions |
+| User  | user     | user     | Reports + Transactions only |
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Transactions
+- Check book availability
+- Issue a book (max 15 days)
+- Return a book
+- Pay fine (₹10 per day overdue)
+
+### Reports
+- Master list of Books
+- Master list of Movies
+- Master list of Memberships
+- Active Issues
+- Overdue Returns
+- Issue Requests
+
+### Maintenance (Admin only)
+- Add/Update Membership
+- Add/Update Books and Movies
+- User Management
+
+## Tech Stack
+- React 18
+- Vite
+- CSS-in-JS (inline styles)
